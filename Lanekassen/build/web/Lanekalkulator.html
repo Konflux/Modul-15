@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Lånekalkulator</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>Velkommen til lånekalkulatoren</h1>
+        <div>Vennligst fyll inn din informasjon under</div>
+        <form name="calcForm" action="Lanekalkulator" method="get">
+
+        <div>Velg livsstatus</div>
+        <select name="livsstatus">
+                <option value="enslig">Enslig søker</option>
+                <option value="enslig+ektefelle">Søker + ektefelle</option>
+                <option value="enslig+barn">Søker + ektefelle + barn</option>
+        </select>
+        
+        <div>Velg bostatus</div>
+        <select name="boStatus">
+            <option value="borteboer">Borteboer</option>
+            <option value="hjemmeboende">Hjemmeboende</option>
+        </select>
+
+        <div>Vennligst estimer din inntekt ila. 2017</div>
+        Inntekt: <input name="innTekt" type="text">
+        
+        <div> Vennligst estimer din formue ila. 2017</div>
+        Formue: <input name="formue" type="text">
+        <input name="calcFormSubmit" type="submit" value="Ferdig">
+        </form>
+    </body>
+</html>
